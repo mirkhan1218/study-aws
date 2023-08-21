@@ -1,1 +1,9 @@
-
+spring:
+  jpa:
+    show-sql: true # sql 콘솔 출력
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect # MySQL8 sql 변경
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:mem://localhost/testdb;MODE=MYSQL
