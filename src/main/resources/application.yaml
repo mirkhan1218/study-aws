@@ -4,6 +4,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect # MySQL8 sql 변경
+
   datasource:
     hikari:
-      jdbc-url: jdbc:h2:mem://localhost/testdb;MODE=MYSQL
+      jdbc-url: jdbc:h2:mem:testdb;MODE=MYSQL
+  h2:
+    console:
+      enabled: true # h2 데이터베이스 웹 콘솔 접근
