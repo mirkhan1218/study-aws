@@ -11,3 +11,8 @@ spring:
   h2:
     console:
       enabled: true # h2 데이터베이스 웹 콘솔 접근
+
+server:
+  servlet:
+    encoding:
+      force-response: true # mustache 한글 인코딩 설정(??? 오류 발생시 추가)
